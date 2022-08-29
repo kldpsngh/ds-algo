@@ -3,6 +3,7 @@ import { radixSort } from "./sorting-algos/radix-sort";
 import { LinkedList, LinkedListNode } from "./data-structures/linked-list";
 import { DoublyLinkedList } from "./data-structures/doubly-linked-list";
 import { ArrayAsStack, LinkedListAsStack } from "./data-structures/stack";
+import { ArrayAsQueue, LinkedListAsQueue } from "./data-structures/queue";
 
 // let arr = [26,23,27,44,17,47,39,42,43,1];
 
@@ -27,16 +28,29 @@ import { ArrayAsStack, LinkedListAsStack } from "./data-structures/stack";
 
 // console.log(ll);
 
-let s = new LinkedListAsStack();
+// let s = new LinkedListAsStack();
 
-s.push("a");
-s.push("b");
-s.push("c");
+// s.push("a");
+// s.push("b");
+// s.push("c");
 
-console.log("size = ", s.size());
-console.log("peek = ", s.peek());
-console.log("isEmpty = ", s.isEmpty());
-console.log("Popped Element = ", s.pop());
-console.log("peek = ", s.peek());
+// console.log("size = ", s.size());
+// console.log("peek = ", s.peek());
+// console.log("isEmpty = ", s.isEmpty());
+// console.log("Popped Element = ", s.pop());
+// console.log("peek = ", s.peek());
+
+let q = new LinkedListAsQueue();
+
+q.enqueue("a");
+q.enqueue("b");
+q.enqueue("c");
+q.enqueue("d");
+
+console.log("size = ", q.size());
+console.log("peek = ", q.peek());
+console.log("isEmpty = ", q.isEmpty());
+console.log("Popped Element = ", q.dequeue());
+console.log("Peek = ", q.peek());
 
 console.log("my");
