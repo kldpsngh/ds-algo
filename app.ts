@@ -1,11 +1,27 @@
-import { quickSort } from "./sorting-algos/quick-sort";
-import { radixSort } from "./sorting-algos/radix-sort";
-import { LinkedList, LinkedListNode } from "./data-structures/linked-list";
-import { DoublyLinkedList } from "./data-structures/doubly-linked-list";
-import { ArrayAsStack, LinkedListAsStack } from "./data-structures/stack";
-import { ArrayAsQueue, LinkedListAsQueue } from "./data-structures/queue";
-import { MaxHeap } from "./data-structures/heap";
-import { Graph } from "./data-structures/graph";
+// import { quickSort } from "./sorting-algos/quick-sort";
+// import { radixSort } from "./sorting-algos/radix-sort";
+// import { LinkedList, LinkedListNode } from "./data-structures/linked-list";
+// import { DoublyLinkedList } from "./data-structures/doubly-linked-list";
+// import { ArrayAsStack, LinkedListAsStack } from "./data-structures/stack";
+// import { ArrayAsQueue, LinkedListAsQueue } from "./data-structures/queue";
+// import { MaxHeap } from "./data-structures/heap";
+// import { Graph } from "./data-structures/graph";
+// import { Fibonacci } from "./dynamic-programming/fibonacci";
+// import {solve} from "./dynamic-programming/test";
+// import {main} from "./oops/inheritance";
+// main();
+
+// import Creator from "./design-patterns/factory/factory-concept";
+// let PRODUCT = Creator.createObject('b');
+// console.log(PRODUCT.name);
+
+import ChairFactory from "./design-patterns/factory/use-case/chair-factory";
+const CHAIR = ChairFactory.getChair("SmallChair");
+console.log(CHAIR.getDimensions());
+
+// solve(5);
+
+// console.log("Answer = ",a);
 
 // let arr = [26,23,27,44,17,47,39,42,43,1];
 
@@ -74,32 +90,36 @@ import { Graph } from "./data-structures/graph";
 
 // console.log(h);
 
-let g = new Graph();
+// let g = new Graph();
 
-g.addVertex("A");
-g.addVertex("B");
-g.addVertex("C");
-g.addVertex("D");
-g.addVertex("E");
-g.addVertex("F");
+// g.addVertex("A");
+// g.addVertex("B");
+// g.addVertex("C");
+// g.addVertex("D");
+// g.addVertex("E");
+// g.addVertex("F");
 
-g.addEdge("A", "B", 4);
-g.addEdge("A", "C", 2);
-g.addEdge("E", "B", 3);
-g.addEdge("C", "D", 2);
-g.addEdge("D", "E", 3);
-g.addEdge("D", "F", 1);
-g.addEdge("C", "F", 4);
-g.addEdge("F", "E", 1);
+// g.addEdge("A", "B", 4);
+// g.addEdge("A", "C", 2);
+// g.addEdge("E", "B", 3);
+// g.addEdge("C", "D", 2);
+// g.addEdge("D", "E", 3);
+// g.addEdge("D", "F", 1);
+// g.addEdge("C", "F", 4);
+// g.addEdge("F", "E", 1);
 
 // g.removeEdge("D","F");
 // g.removeVertex("D");
 
-console.log(g.adjacencyList);
+// console.log(g.adjacencyList);
 
 // console.log(g.dfs("A"));
-console.log(g.bfs("A"));
+// console.log(g.bfs("A"));
 
 // console.log(g.adjacencyList);
 
-console.log("my");
+// let f = new Fibonacci();
+
+// console.log(f.getNumberMemoized(100));
+
+// console.log("my");
