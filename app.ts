@@ -11,13 +11,93 @@
 // import {main} from "./oops/inheritance";
 // main();
 
+// design patterns ...
+
 // import Creator from "./design-patterns/factory/factory-concept";
 // let PRODUCT = Creator.createObject('b');
 // console.log(PRODUCT.name);
 
-import ChairFactory from "./design-patterns/factory/use-case/chair-factory";
-const CHAIR = ChairFactory.getChair("SmallChair");
-console.log(CHAIR.getDimensions());
+// import ChairFactory from "./design-patterns/factory/use-case/chair-factory";
+// const CHAIR = ChairFactory.getChair("SmallChair");
+// console.log(CHAIR.getDimensions());
+
+// import AbstractFactory from "./design-patterns/abstract-factory/abstract-factory-concept";
+// let PRODUCT = AbstractFactory.createObject('ab');
+// console.log(PRODUCT)
+
+// PRODUCT = AbstractFactory.createObject('bc')
+// console.log(PRODUCT)
+
+// import FurnitureFactory from "./design-patterns/abstract-factory/use-case/furniture-factory";
+// let FURNITURE = FurnitureFactory.getFurniture("SmallChair");
+// console.log(FURNITURE?.name);
+// console.log(FURNITURE?.getDimensions());
+
+// FURNITURE = FurnitureFactory.getFurniture("MediumTable");
+// console.log(FURNITURE?.name);
+// console.log(FURNITURE?.getDimensions());
+
+// import Director from "./design-patterns/builder/builder-concept";
+// const PRODUCT1 = Director.construct();
+// console.log(PRODUCT1.parts);
+
+// House Builder Example Code
+
+// import IglooDirector from './design-patterns/builder/use-case/igloo-director';
+// import CastleDirector from './design-patterns/builder/use-case/castle-director'
+// import HouseBoatDirector from './design-patterns/builder/use-case/houseboat-director'
+
+// const IGLOO = IglooDirector.construct()
+// const CASTLE = CastleDirector.construct()
+// const HOUSEBOAT = HouseBoatDirector.construct()
+
+// console.log(IGLOO.construction())
+// console.log(CASTLE.construction())
+// console.log(HOUSEBOAT.construction())
+
+// import Singleton from "./design-patterns/singleton/singleton-concept";
+// const OBJECT1 = new Singleton(1);
+// const OBJECT2 = new Singleton(2);
+// console.log(OBJECT1 === OBJECT2);
+// console.log(OBJECT1.id);
+// console.log(OBJECT2.id);
+
+// import Game1 from "./design-patterns/singleton/use-case/game1";
+// import Game2 from "./design-patterns/singleton/use-case/game2";
+// import Game3 from "./design-patterns/singleton/use-case/game3";
+
+// // The Client
+// // Despite all games instantiating a leaderboard, they all point
+// // to the same memory object since the leaderboard is a singleton.
+// const GAME1 = new Game1()
+// GAME1.addWinner(2, 'Cosmo')
+
+// const GAME2 = new Game2()
+// GAME2.addWinner(3, 'Sean')
+
+// const GAME3 = new Game3()
+// GAME3.addWinner(1, 'Emmy')
+
+// GAME1.leaderboard.print()
+// GAME2.leaderboard.print()
+// GAME3.leaderboard.print()
+
+// import { Decorator, Component } from "./design-patterns/decorator/decorator-concept";
+// const COMPONENT = new Component()
+// console.log(COMPONENT.method());
+
+// // The component can be decorated
+// const Decorated = new Decorator(COMPONENT)
+// console.log(Decorated.method());
+
+// // The decorated component can be decorated again
+// const Decorated2 = new Decorator(Decorated)
+// console.log(Decorated2.method());
+
+// import main from "./design-patterns/decorator/use-case/client";
+// main();
+
+//
 
 // solve(5);
 
