@@ -97,6 +97,27 @@
 // import main from "./design-patterns/decorator/use-case/client";
 // main();
 
+// import main from "./design-patterns/adapter/use-case/client";
+// main();
+
+// import {SubSystemClassA,SubSystemClassB,SubSystemClassC,Facade} from "./design-patterns/facade/facade-concept";
+// // Calling potentially complicated subsystems directly
+// console.log(new SubSystemClassA().method())
+// console.log(new SubSystemClassB().method('B'))
+// console.log(new SubSystemClassC().method({ C: [1, 2, 3] }));
+
+// // or using the simplified facade instead
+// const FACADE = new Facade()
+// console.log(FACADE.subSystemClassA())
+// console.log(FACADE.subSystemClassB('B'))
+// console.log(FACADE.subSystemClassC({ C: [1, 2, 3] }))
+
+// import {facadeExample} from "./design-patterns/facade/use-case/client";
+// facadeExample();
+
+import { clientCode } from "./design-patterns/observer/observer-concept";
+clientCode();
+
 //
 
 // solve(5);

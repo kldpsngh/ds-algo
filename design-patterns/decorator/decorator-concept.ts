@@ -1,19 +1,19 @@
 // Decorator Concept Sample Code
 
 interface IComponent {
-    method(): string
+    method(): string;
 }
 
 export class Component implements IComponent {
     method(): string {
-        return 'Component Method';
+        return "Component Method";
     }
 }
 
 export class Decorator implements IComponent {
-    #object : IComponent
+    #object: IComponent;
 
-    constructor(object: IComponent){
+    constructor(object: IComponent) {
         this.#object = object;
     }
 
@@ -21,8 +21,6 @@ export class Decorator implements IComponent {
         return `Decorator Method(${this.#object.method()})`;
     }
 }
-
-
 
 // The Client
 // const COMPONENT = new Component()
