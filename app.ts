@@ -115,10 +115,21 @@
 // import {facadeExample} from "./design-patterns/facade/use-case/client";
 // facadeExample();
 
-import { clientCode } from "./design-patterns/observer/observer-concept";
-clientCode();
+// import { clientCode } from "./design-patterns/observer/observer-concept";
+// clientCode();
 
 //
+// import Scanner from "./readline";
+
+// async function main(){
+//     const scanner = new Scanner();
+//     for(let i = 0; i < 6; i++){
+//         let str = await scanner.readLine();
+//         console.log("You typed = ",str);
+//     }
+//     scanner.close();
+// }
+// main();
 
 // solve(5);
 
