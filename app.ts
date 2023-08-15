@@ -115,8 +115,9 @@
 // import {facadeExample} from "./design-patterns/facade/use-case/client";
 // facadeExample();
 
-// import { clientCode } from "./design-patterns/observer/observer-concept";
-// clientCode();
+import { ChangeStream } from "mongodb";
+import { clientCode } from "./design-patterns/observer/observer-concept";
+clientCode();
 
 //
 // import Scanner from "./readline";
@@ -235,3 +236,6 @@
 // console.log(f.getNumberMemoized(100));
 
 // console.log("my");
+
+// import MinimumRecolors from "./sliding-window/2379_minimum_recolors";
+// new MinimumRecolors().main();
